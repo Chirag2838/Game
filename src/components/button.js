@@ -10,7 +10,6 @@ function Button({
   danger,
   outline,
   rounded,
-  to,
   ...rest
 }) {
   const classes = className(
@@ -34,7 +33,7 @@ function Button({
 
   return (
     <button {...rest} className={classes}>
-      <Link to={to}>{children}</Link>
+      {children}
     </button>
   );
 }
